@@ -34,7 +34,7 @@ PRIMARY KEY (`id`),
 
 
 CREATE TABLE `commandes_chaussures` (
-  `id_commandes` int unsigned NOT NULL,INSERT INTO clients (nom,prenom,email) VALUE("dupont", "pierre","ygygy@");
+  `id_commandes` int unsigned NOT NULL,
   `id_chaussures` int unsigned NOT NULL);
  alter table `commandes_chaussures`add CONSTRAINT `fk_idcommandes` FOREIGN KEY (`id_commandes`) REFERENCES `commandes` (`id`);
 alter table `commandes_chaussures`add CONSTRAINT `fdesk_idchaussures` FOREIGN KEY (`id_chaussures`) REFERENCES `chaussures` (`id`);
